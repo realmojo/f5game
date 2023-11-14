@@ -137,7 +137,6 @@ const doSearch = async () => {
     (url.indexOf("youtube") === -1 && url.indexOf("youtu.be") === -1)
   ) {
     openNotification("top");
-    inputRef.current.focus();
     return;
   }
   isLoading.value = true;

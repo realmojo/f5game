@@ -9,8 +9,6 @@
 </template>
 
 <script setup>
-// const route = useRoute();
-// const runtimeConfig = useRuntimeConfig();
 const items = ref([
   {
     image: "https://f5game.s3.ap-northeast-2.amazonaws.com/match.png",
