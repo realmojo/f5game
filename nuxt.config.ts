@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   //     BASE_URL: "https://agent.f5game.co.kr/api",
   //   },
   // },
-  css: ["~/assets/css/style.css"],
+  css: ["~/assets/css/style.css", "~/assets/css/mobile.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -17,13 +17,6 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/image-edge"],
-  tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-    configPath: "tailwind.config",
-    exposeConfig: false,
-    injectPosition: 0,
-    viewer: true,
-  },
   plugins: ["@/plugins/antd"],
   app: {
     head: {
