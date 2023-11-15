@@ -109,8 +109,8 @@
         </div>
       </a-col>
     </a-row>
-    <contextHolder />
   </main>
+  <!-- <contextHolder /> -->
 </template>
 
 <script setup>
@@ -122,7 +122,6 @@ import {
 } from "@ant-design/icons-vue";
 import { notification } from "ant-design-vue";
 import axios from "axios";
-const [api, contextHolder] = notification.useNotification();
 
 const youtubeUrl = ref("");
 const isLoading = ref(false);
@@ -132,7 +131,6 @@ const value2 = ref("");
 const options2 = ref([]);
 const doSearch = async () => {
   const url = youtubeUrl.value;
-
   if (
     !url ||
     (url.indexOf("youtube") === -1 && url.indexOf("youtu.be") === -1)
@@ -156,7 +154,7 @@ const optionChange = (item, e) => {
 };
 
 const openNotification = (placement) => {
-  api.error({
+  notification["error"]({
     message: "올바르지 않은 주소 입니다.",
     description: "유튜브 주소가 올바르지 않습니다.",
     placement,

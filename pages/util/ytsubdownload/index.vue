@@ -10,7 +10,7 @@
     />
     <h2 class="pt-4 px-2 text-sm text-left">
       당사의 서비스를 이용하면 당사의 서비스 약관 및
-      <NuxtLink href="/util/ss/privacy" class="text-blue-500">
+      <NuxtLink href="/util/ytsubdownload/privacy" class="text-blue-500">
         개인정보보호방침 </NuxtLink
       >에 동의하는 것입니다.
       <strong>
@@ -70,8 +70,8 @@
         </h3>
         <div class="text-center">
           <p>
-            YouTube 링크를 입력하거나 입력하여 비디오를 찾으면 MP4 비디오 또는
-            MP3 오디오를 다운로드 할 수 있습니다.
+            YouTube 링크를 입력하거나 입력하여 비디오를 찾으면 유튜브 자막을
+            다운로드 할 수 있습니다.
           </p>
         </div>
       </a-col>
@@ -121,7 +121,6 @@ import {
 } from "@ant-design/icons-vue";
 import { notification } from "ant-design-vue";
 import axios from "axios";
-const [api, contextHolder] = notification.useNotification();
 
 const youtubeUrl = ref("");
 const isLoading = ref(false);
@@ -156,7 +155,7 @@ const optionChange = (item, e) => {
 };
 
 const openNotification = (placement) => {
-  api.error({
+  notification["error"]({
     message: "올바르지 않은 주소 입니다.",
     description: "유튜브 주소가 올바르지 않습니다.",
     placement,

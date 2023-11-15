@@ -107,7 +107,6 @@
         </div>
       </a-col>
     </a-row>
-    <contextHolder />
   </main>
 </template>
 
@@ -120,7 +119,6 @@ import {
 } from "@ant-design/icons-vue";
 import { notification } from "ant-design-vue";
 import axios from "axios";
-const [api, contextHolder] = notification.useNotification();
 
 const twitterUrl = ref("");
 const isLoading = ref(false);
@@ -151,7 +149,7 @@ const optionChange = (item, e) => {
 };
 
 const openNotification = (placement) => {
-  api.error({
+  notification["error"]({
     message: "올바르지 않은 주소 입니다.",
     description: "트위터 주소가 올바르지 않습니다.",
     placement,
