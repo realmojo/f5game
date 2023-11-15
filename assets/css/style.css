@@ -10,14 +10,14 @@ header {
   background: rgb(229, 186, 115);
   background: linear-gradient(
     90deg,
-    rgb(149, 115, 229) 0%,
-    rgb(139, 102, 226) 100%
+    rgb(126, 126, 126) 0%,
+    rgb(201, 201, 201) 100%
   );
   justify-content: space-between;
   width: 100%;
   z-index: 99;
   height: 64px;
-  /* position: fixed; */
+  margin-bottom: 10px;
 }
 header > .header-wrap {
   padding-left: 20px;

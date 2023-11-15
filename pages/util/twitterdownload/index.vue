@@ -3,7 +3,7 @@
     <h1 class="text-4xl font-bold text-center pt-8">트위터 영상 다운로드</h1>
     <p class="text-center my-4">트위터 주소를 입력해 주세요</p>
     <a-input
-      v-model:value="youtubeUrl"
+      v-model:value="twitterUrl"
       placeholder="https://twitter.com/ScienceGuys_/status/1724411757391913459"
       size="large"
       class="btn-search"
@@ -28,12 +28,12 @@
       DOWNLOAD
     </a-button>
 
-    <div class="twitter-card" v-if="item.title">
+    <div class="twitter-card" v-if="item.content">
       <a-card>
         <div class="ant-card-cover">
-          <nuxt-img :alt="item.title" :src="item.thumbnail" loading="lazy" />
+          <nuxt-img :alt="item.content" :src="item.thumbnail" loading="lazy" />
         </div>
-        <a-card-meta :title="item.title" />
+        <a-card-meta :title="item.content" />
 
         <div class="pt-4">
           <a-select
@@ -46,10 +46,8 @@
         <a
           class="link link-download subname ga_track_events download-icon"
           :href="urlItem.value"
-          :data-quality="urlItem.quality"
-          :data-type="urlItem.type"
-          :download="urlItem.title"
-          target="_self"
+          :data-type="urlItem.content_type.split('/')[1]"
+          :download="`twitter-${new Date().getTime()}`"
         >
           <a-button
             class="bg-blue-500 mt-4 text-center"
@@ -64,20 +62,20 @@
 
     <a-row class="mt-8 px-2">
       <a-col span="24" class="text-center mb-4">
-        <CloudDownloadOutlined class="text-6xl" />
-        <h3 class="text-lg text-rose-500 mb-4">
+        <CloudDownloadOutlined class="text-6xl text-blue-400" />
+        <h3 class="text-lg text-blue-500 mb-4">
           <strong>무료 다운로드</strong>
         </h3>
         <div class="text-center">
           <p>
-            YouTube 링크를 입력하거나 입력하여 비디오를 찾으면 MP4 비디오 또는
+            Twitter 링크를 입력하거나 입력하여 비디오를 찾으면 MP4 비디오 또는
             MP3 오디오를 다운로드 할 수 있습니다.
           </p>
         </div>
       </a-col>
       <a-col :xs="{ span: 24 }" class="text-center mb-4">
-        <YoutubeOutlined class="text-6xl" />
-        <h3 class="text-lg text-rose-500 mb-4">
+        <TwitterOutlined class="text-6xl text-blue-400" />
+        <h3 class="text-lg text-blue-500 mb-4">
           <strong>어디서나 빠르게</strong>
         </h3>
         <div class="text-center">
@@ -88,8 +86,8 @@
         </div>
       </a-col>
       <a-col :xs="{ span: 24 }" class="text-center mb-4">
-        <CloseSquareOutlined class="text-6xl" />
-        <h3 class="text-lg text-rose-500 mb-4">
+        <CloseSquareOutlined class="text-6xl text-blue-400" />
+        <h3 class="text-lg text-blue-500 mb-4">
           <strong>계정이 필요없음</strong>
         </h3>
         <div class="text-center">
@@ -97,8 +95,8 @@
         </div>
       </a-col>
       <a-col :xs="{ span: 24 }" class="text-center mb-4">
-        <LikeOutlined class="text-6xl" />
-        <h3 class="text-lg text-rose-500 mb-4">
+        <LikeOutlined class="text-6xl text-blue-400" />
+        <h3 class="text-lg text-blue-500 mb-4">
           <strong>고속 다운로드</strong>
         </h3>
         <div class="text-center">
@@ -109,51 +107,48 @@
         </div>
       </a-col>
     </a-row>
+    <contextHolder />
   </main>
 </template>
 
 <script setup>
-// import {
-//   CloudDownloadOutlined,
-//   YoutubeOutlined,
-//   CloseSquareOutlined,
-//   LikeOutlined,
-// } from "@ant-design/icons-vue";
-// import { notification } from "ant-design-vue";
-// import axios from "axios";
-// const [api, contextHolder] = notification.useNotification();
+import {
+  CloudDownloadOutlined,
+  TwitterOutlined,
+  CloseSquareOutlined,
+  LikeOutlined,
+} from "@ant-design/icons-vue";
+import { notification } from "ant-design-vue";
+import axios from "axios";
+const [api, contextHolder] = notification.useNotification();
 
-// const youtubeUrl = ref("");
-// const isLoading = ref(false);
-// const item = ref({});
-// const urlItem = ref({});
-// const value2 = ref("");
-// const options2 = ref([]);
-// const doSearch = async () => {
-//   const url = youtubeUrl.value;
+const twitterUrl = ref("");
+const isLoading = ref(false);
+const item = ref({});
+const urlItem = ref({});
+const value2 = ref("");
+const options2 = ref([]);
+const doSearch = async () => {
+  const url = twitterUrl.value;
 
-//   if (
-//     !url ||
-//     (url.indexOf("youtube") === -1 && url.indexOf("youtu.be") === -1)
-//   ) {
-//     openNotification("top");
-//     return;
-//   }
-//   isLoading.value = true;
-//   const { data } = await axios.get(
-//     `https://f5game-bot.herokuapp.com/youtube/scripts?url=${url}`
-//   );
-//   isLoading.value = false;
-//   console.log(data);
-//   // item.value = data;
-//   // options2.value = data.urls;
-//   // urlItem.value = data.urls[0];
-//   // value2.value = data.urls[0].value;
-// };
+  if (!url || (url.indexOf("twitter") === -1 && url.indexOf("t.co") === -1)) {
+    openNotification("top");
+    return;
+  }
+  isLoading.value = true;
+  const { data } = await axios.get(
+    `https://f5game-bot.herokuapp.com/twitter/videos?url=${url}`
+  );
+  isLoading.value = false;
+  item.value = data;
+  options2.value = data.videoItems;
+  urlItem.value = data.videoItems[0];
+  value2.value = data.videoItems[0].value;
+};
 
-// const optionChange = (item, e) => {
-//   urlItem.value = e;
-// };
+const optionChange = (item, e) => {
+  urlItem.value = e;
+};
 
 const openNotification = (placement) => {
   api.error({

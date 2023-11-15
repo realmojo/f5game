@@ -64,7 +64,7 @@
 
     <a-row class="mt-8 px-2">
       <a-col span="24" class="text-center mb-4">
-        <CloudDownloadOutlined class="text-6xl" />
+        <CloudDownloadOutlined class="text-6xl text-rose-400" />
         <h3 class="text-lg text-rose-500 mb-4">
           <strong>무료 다운로드</strong>
         </h3>
@@ -76,7 +76,7 @@
         </div>
       </a-col>
       <a-col :xs="{ span: 24 }" class="text-center mb-4">
-        <YoutubeOutlined class="text-6xl" />
+        <YoutubeOutlined class="text-6xl text-rose-400" />
         <h3 class="text-lg text-rose-500 mb-4">
           <strong>어디서나 빠르게</strong>
         </h3>
@@ -88,7 +88,7 @@
         </div>
       </a-col>
       <a-col :xs="{ span: 24 }" class="text-center mb-4">
-        <CloseSquareOutlined class="text-6xl" />
+        <CloseSquareOutlined class="text-6xl text-rose-400" />
         <h3 class="text-lg text-rose-500 mb-4">
           <strong>계정이 필요없음</strong>
         </h3>
@@ -97,7 +97,7 @@
         </div>
       </a-col>
       <a-col :xs="{ span: 24 }" class="text-center mb-4">
-        <LikeOutlined class="text-6xl" />
+        <LikeOutlined class="text-6xl text-rose-400" />
         <h3 class="text-lg text-rose-500 mb-4">
           <strong>고속 다운로드</strong>
         </h3>
@@ -109,6 +109,7 @@
         </div>
       </a-col>
     </a-row>
+    <contextHolder />
   </main>
 </template>
 

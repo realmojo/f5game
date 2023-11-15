@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-wrap">
-      <a href="/" target="_self">F5 Games</a>
+      <NuxtLink to="/">F5 Games</NuxtLink>
       <!-- <nuxt-img
         src="https://f5game.s3.ap-northeast-2.amazonaws.com/testpang-logo.png"
         class="logo-image"
