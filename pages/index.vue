@@ -75,7 +75,7 @@ const items = ref([
       "몇 가지 문항을 통하여 자신의 성인 ADHD인지 확인할 수 있습니다.",
   },
   {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/animal.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/animal/animal.webp",
     link: "animal",
     category: "test",
     title: "영적동물 테스트",
@@ -115,52 +115,4 @@ const items = ref([
       "한 문장으로 다양한 테스트 케이스를 만들고 친구들과 공유해보세요.",
   },
 ]);
-// const recentlyItems = ref([]);
-// const popularItems = ref([]);
-// const page = ref(1);
-
-// const searchText = computed(() => {
-//   return route.query.search;
-// });
-
-// let queryParams = "";
-// if (searchText.value) {
-//   queryParams = `?search=${searchText.value}`;
-// }
-
-// const url = `${runtimeConfig.public.BASE_URL}/mind/main.php${queryParams}`;
-// const { data } = await useFetch(url, {
-//   key: "main",
-//   method: "get",
-// });
-
-// const d = JSON.parse(data._rawValue);
-// items.value = d.items;
-// recentlyItems.value = d.recentlyItems;
-// popularItems.value = d.popularItems;
-
-// const url = `/api/mind/main${queryParams}`;
-// const { data } = await useFetch(url, {
-//   key: "main",
-//   method: "get",
-// });
-
-// items.value = data._rawValue.items;
-// recentlyItems.value = data._rawValue.recentlyItems;
-// popularItems.value = data._rawValue.popularItems;
-
-// const doMoreItem = async () => {
-//   // const url = `/api/mind/list?page=${page.value}`;
-//   const url = `${runtimeConfig.public.BASE_URL}/mind/list.php?page=${page.value}`;
-//   const { data } = await useFetch(url, {
-//     key: "moreList",
-//     method: "get",
-//   });
-//   const d = JSON.parse(data._rawValue);
-//   const moreItems = d;
-//   if (moreItems.length) {
-//     page.value += 1;
-//     items.value = items.value.concat(moreItems);
-//   }
-// };
 </script>

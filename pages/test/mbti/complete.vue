@@ -15,7 +15,7 @@
         >확인</a-button
       >
     </div>
-    <div v-else class="pt-8">
+    <div v-else class="pt-4">
       <div>
         <h1 class="text-center text-2xl font-bold">MBTI 결과는?</h1>
 

@@ -25,7 +25,7 @@
           type="primary"
           size="large"
         >
-          NEXT
+          결과보기
         </a-button>
       </NuxtLink>
     </div>
