@@ -2,7 +2,7 @@
   <div class="flex justify-center px-4 pt-4 pb-4">
     <div class="twitter-share-button inline" style="cursor: pointer">
       <a
-        :href="`https://twitter.com/intent/tweet?text=성인 ADHD 테스트 자가진단?&url=https://adhd.f5game.co.kr&hashtags=#ADHD#테스트}`"
+        :href="`https://twitter.com/intent/tweet?text=${props.title}&url=${props.url}`"
         target="_blank"
         rel="noreferrer"
       >
@@ -49,6 +49,8 @@
 </template>
 
 <script setup>
+import { message } from "ant-design-vue";
+
 const props = defineProps({
   title: String,
   url: String,
@@ -57,16 +59,19 @@ const props = defineProps({
 const shareFacebook = () => {
   window.open(
     `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-      `https://adhd.f5game.co.kr`
-    )}&t=성인 ADHD 테스트 자가진단`,
+      props.url
+    )}&t=${props.title}`,
     "_blank",
     "width=600, height: 400"
   );
 };
+const success = () => {
+  message.success("URL이 복사되었습니다.");
+};
 const copy = () => {
   success();
   var textarea = document.createElement("textarea");
-  textarea.value = `https://adhd.f5game.co.kr`;
+  textarea.value = props.url;
 
   document.body.appendChild(textarea);
   textarea.select();
@@ -82,27 +87,27 @@ const createKakaoButton = () => {
     // 중복 initialization 방지
     if (!kakao.isInitialized()) {
       // 두번째 step 에서 가져온 javascript key 를 이용하여 initialize
-      kakao.init("9be026d6a192988804264aee3cefd4a3");
+      kakao.init("5b3054ed11032778fbcd220b25fd0c8e");
     }
     kakao.Link.createDefaultButton({
       // Render 부분 id=kakao-link-btn 을 찾아 그부분에 렌더링을 합니다
       container: "#kakao-link-btn",
       objectType: "feed",
       content: {
-        title: "성인 ADHD 테스트 자가진단 - F5 Games",
-        description: "성인 ADHD 테스트 자가진단- F5 Games",
-        imageUrl: "https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.png",
+        title: props.title,
+        description: props.title,
+        imageUrl: props.imageUrl,
         link: {
-          mobileWebUrl: "https://adhd.f5game.co.kr",
-          webUrl: "https://adhd.f5game.co.kr",
+          mobileWebUrl: props.url,
+          webUrl: props.url,
         },
       },
       buttons: [
         {
           title: "플레이 하기",
           link: {
-            mobileWebUrl: "https://adhd.f5game.co.kr",
-            webUrl: "https://adhd.f5game.co.kr",
+            mobileWebUrl: props.url,
+            webUrl: props.url,
           },
         },
       ],

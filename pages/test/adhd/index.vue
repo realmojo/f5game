@@ -6,7 +6,7 @@
       문항을 읽고 답해보세요.
     </p>
     <Adsense slotId="9319130475" />
-    <div class="w-full">
+    <div class="w-full px-2">
       <NuxtLink to="/test/adhd/page1">
         <a-button
           class="bg-blue-500 mt-4 text-center w-full"
@@ -59,6 +59,4 @@
   </main>
 </template>
 
-<script>
-export default {};
-</script>
+<script setup></script>

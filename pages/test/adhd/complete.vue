@@ -24,7 +24,11 @@
         <div class="text-center pt-4 text-4xl">{{ name }}</div>
         <div class="text-left px-4 pt-4 pb-4 adhd-result-text">{{ text }}</div>
       </div>
-      <Share />
+      <Share
+        title="성인 ADHD 테스트 자가진단 - F5 Games"
+        imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.png"
+        url="https://f5game.co.kr/test/adhd"
+      />
     </div>
   </main>
 </template>
