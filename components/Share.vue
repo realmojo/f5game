@@ -82,6 +82,7 @@ const copy = () => {
 };
 const createKakaoButton = () => {
   // kakao sdk script이 정상적으로 불러와졌으면 window.Kakao로 접근이 가능합니다
+  console.log(window.Kakao);
   if (window.Kakao) {
     const kakao = window.Kakao;
     // 중복 initialization 방지

@@ -1,7 +1,7 @@
 <template>
   <main class="test-layout flex justify-center flex-col">
     <div v-if="!isResult">
-      <h1 class="text-3xl text-center pt-16">결과를 기다리고 있습니다.</h1>
+      <h1 class="text-3xl text-center pt-4">결과를 기다리고 있습니다.</h1>
       <div v-if="isLoading" class="text-center pt-4 mb-2">
         <a-spin size="large" class="text-gray-400" />
       </div>
@@ -19,11 +19,10 @@
       <div>
         <h1 class="text-center text-2xl font-bold">당신의 정신연령 나이는?</h1>
 
-        <Adsense slotId="4567187006" />
-
         <div class="text-center pt-4 text-4xl">{{ age }}</div>
         <div class="text-left px-4 pt-4 pb-4 adhd-result-text">{{ text }}</div>
         <nuxt-img alt="color-age-result" :src="imageUrl" loading="lazy" />
+        <Adsense slotId="4567187006" />
       </div>
       <Share
         title="정신연령 색상 테스트 - F5 Games"

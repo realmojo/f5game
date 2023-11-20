@@ -17,7 +17,7 @@
             alt="qna1"
           />
         </a-radio>
-        <a-radio :style="radioStyle" :value="3">
+        <a-radio :style="radioStyle" :value="4">
           <nuxt-img
             src="https://tistory.s3.ap-northeast-2.amazonaws.com/question4-c.png"
             class="pt-2 w-full"

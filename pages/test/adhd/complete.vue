@@ -1,7 +1,7 @@
 <template>
   <main class="test-layout flex justify-center flex-col">
     <div v-if="!isResult">
-      <h1 class="text-3xl text-center pt-16">결과를 기다리고 있습니다.</h1>
+      <h1 class="text-3xl text-center pt-4">결과를 기다리고 있습니다.</h1>
       <div v-if="isLoading" class="text-center pt-4 mb-2">
         <a-spin size="large" class="text-gray-400" />
       </div>

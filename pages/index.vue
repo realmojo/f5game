@@ -35,7 +35,7 @@ const items = ref([
       "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
   },
   {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/color.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/color.webp",
     link: "color",
     category: "test",
     title: "색맹 테스트",
@@ -51,7 +51,7 @@ const items = ref([
       "절대음감이란 어떤 음을 들었을 때 그 고유의 진동수를 파악하여 정확한 음정을 찾아내는 청각 능력을 말합니다. 여러분들도 한번 도전해보세요!",
   },
   {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/color-age.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/color-age.webp",
     link: "color-age",
     category: "test",
     title: "정신연령 테스트",
@@ -59,7 +59,7 @@ const items = ref([
       "색상으로 알아보는 정신연령 테스트를 해보세요. 10대부터 60대까지 확인 가능합니다.",
   },
   {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/mbti.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/mbti.webp",
     link: "mbti",
     category: "test",
     title: "MBTI 검사 성격 이상형 테스트",
@@ -67,7 +67,7 @@ const items = ref([
       "몇 가지 문항을 통하여 자신의 MBTI유형과 이성의 MBTI유형을 확인할 수 있습니다.",
   },
   {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.webp",
     link: "adhd",
     category: "test",
     title: "성인 ADHD 테스트 자가진단",
@@ -83,7 +83,7 @@ const items = ref([
       "몇 가지 문항을 통하여 자신의 영적동물이 어느것과 어울리는지 확인할 수 있습니다.",
   },
   {
-    image: "https://ss.f5game.co.kr/logo.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/ss.webp",
     link: "ss",
     category: "util",
     title: "유튜브 동영상 다운로드",
@@ -91,7 +91,7 @@ const items = ref([
       "유튜브 동영상 다운로드 기능을 무료로 제공합니다. 웹 모바일 모두 무료로 유튜브 영상을 다운로드 할 수 있습니다.",
   },
   {
-    image: "https://ytsubdownload.f5game.co.kr/logo.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/ytsubdown.webp",
     link: "ytsubdownload",
     category: "util",
     title: "유튜브 자막 다운로드",
@@ -99,7 +99,7 @@ const items = ref([
       "유튜브 자막 다운로드 기능을 제공합니다. 해당 애플리케이션은 모두 무료로 이용가 능합니다.",
   },
   {
-    image: "https://twitterdownload.f5game.co.kr/logo.png",
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/twitter.webp",
     link: "twitterdownload",
     category: "util",
     title: "트위터 영상 다운로드",
