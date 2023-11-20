@@ -1,5 +1,6 @@
 @media (max-width: 575.98px) {
-  .site-layout {
+  .site-layout,
+  .main-layout {
     width: 100%;
   }
   article {
@@ -10,10 +11,17 @@
     width: 100%;
     margin: 0 auto;
   }
+  .site-layout.pitch {
+    width: 100%;
+  }
+  .pitch-iframe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1000px) {
-  .site-layout {
+  .site-layout,
+  .main-layout {
     width: 100%;
   }
 }

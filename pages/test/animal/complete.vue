@@ -27,7 +27,7 @@
       </div>
       <Share
         title="영적동물 테스트 - F5 Games"
-        imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/animal/animal.webp"
+        imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/animal.webp"
         url="https://f5game.co.kr/test/animal"
       />
     </div>

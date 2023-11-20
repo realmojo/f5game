@@ -1,4 +1,7 @@
 <template>
+  <div class="text-center text-xl text-stone-700 font-bold">
+    👇 친구들과 함께 해보세요 👇
+  </div>
   <div class="flex justify-center px-4 pt-4 pb-4">
     <div class="twitter-share-button inline" style="cursor: pointer">
       <a

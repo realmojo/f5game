@@ -10,8 +10,8 @@ header {
   background: rgb(229, 186, 115);
   background: linear-gradient(
     90deg,
-    rgb(126, 126, 126) 0%,
-    rgb(201, 201, 201) 100%
+    rgb(201, 201, 201) 0%,
+    rgb(126, 126, 126) 100%
   );
   justify-content: space-between;
   width: 100%;
@@ -24,7 +24,7 @@ header > .header-wrap {
   padding-top: 20px;
 }
 header > .header-wrap > a {
-  color: #eee8dd;
+  color: #383837;
   font-size: 24px;
   font-weight: bold;
 }
@@ -35,13 +35,30 @@ header > .header-wrap > a {
   margin-left: 4px;
   display: inline;
 }
+.main-layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+.ant-layout {
+  background-color: #fff;
+}
+.ant-card .ant-card-body {
+  padding: 0;
+}
 .site-layout {
   width: 800px;
   margin: 0 auto;
 }
+.site-layout.pitch {
+  width: 1000px;
+}
 .test-layout {
   width: 500px;
   margin: 0 auto;
+}
+.pitch-iframe {
+  width: 1000px;
+  height: 900px;
 }
 .adsense-dev {
   width: 100%;

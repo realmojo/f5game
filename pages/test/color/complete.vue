@@ -18,7 +18,7 @@
     <div v-else class="pt-4">
       <div>
         <h1 class="text-center text-2xl font-bold">상위 {{ r.percent }}</h1>
-        <div class="text-center pt-4 text-2xl">
+        <div class="text-center pt-4 text-xl">
           <strong>{{ level }}단계</strong>까지 오셨네요. <br />
           {{ r.message }}
         </div>
