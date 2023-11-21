@@ -1,14 +1,6 @@
 <template>
   <main class="site-layout match flex justify-center flex-col">
-    <Ready
-      v-if="isStart === false"
-      :text="isStartText === false ? 'Ready' : 'Start'"
-    />
-
-    <div
-      :class="isStart === false ? 'opacity-0' : 'opacity-100'"
-      style="margin-top: -10px"
-    >
+    <div style="margin-top: -10px; margin-bottom: 20px">
       <iframe
         src="http://f5game-match.s3-website.ap-northeast-2.amazonaws.com/#/game"
         class="match-iframe"
@@ -22,18 +14,3 @@
     />
   </main>
 </template>
-
-<script setup>
-import "~/pages/test/color/index.scss";
-const isStart = ref(false);
-const isStartText = ref(false);
-
-onMounted(() => {
-  setTimeout(() => {
-    isStart.value = true;
-  }, 3800);
-  setTimeout(() => {
-    isStartText.value = true;
-  }, 2000);
-});
-</script>

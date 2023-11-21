@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import "~/pages/test/color/index.scss";
+import "~/assets/css/ready.scss";
 const isStart = ref(false);
 const isStartText = ref(false);
 

@@ -37,7 +37,7 @@
   </main>
 </template>
 <script setup>
-import "~/pages/test/color/index.scss";
+import "~/assets/css/ready.scss";
 import {
   stages,
   totalSpan,
@@ -46,7 +46,7 @@ import {
   mediumColor,
   hardColor,
   crazyColor,
-} from "./stage";
+} from "~/assets/js/stage.js";
 
 const isStart = ref(false);
 const isStartText = ref(false);

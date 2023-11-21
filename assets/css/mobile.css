@@ -11,16 +11,24 @@
     width: 100%;
     margin: 0 auto;
   }
-  .site-layout.pitch {
+  .site-layout.pitch,
+  .site-layout.match,
+  .site-layout.memory,
+  .site-layout.sudoku {
     width: 100%;
   }
-  .pitch-iframe {
-    width: 100%;
-    height: 500px;
-  }
+  .pitch-iframe,
   .match-iframe {
     width: 100%;
     height: 500px;
+  }
+  .memory-iframe {
+    width: 100%;
+    height: 570px;
+  }
+  .sudoku-iframe {
+    width: 100%;
+    height: 800px;
   }
 }
 
