@@ -2,7 +2,7 @@
   <main class="site-layout match flex justify-center flex-col">
     <div style="margin-top: -10px; margin-bottom: 20px">
       <iframe
-        src="http://f5game-match.s3-website.ap-northeast-2.amazonaws.com/#/game"
+        src="https://d2nzxqpgbrdj28.cloudfront.net/#/game"
         class="match-iframe"
       />
     </div>

@@ -2,7 +2,7 @@
   <main class="site-layout sudoku flex justify-center flex-col">
     <div style="margin-top: -10px">
       <iframe
-        :src="`http://f5game-sudoku.s3-website.ap-northeast-2.amazonaws.com/#/game/sudoku/${type}`"
+        :src="`https://d32cr74qen1asv.cloudfront.net/#/game/sudoku/${type}`"
         class="sudoku-iframe"
       />
     </div>

@@ -2,7 +2,7 @@
   <main class="site-layout memory flex justify-center flex-col">
     <div style="margin-top: -10px">
       <iframe
-        src="http://f5game-memory.s3-website.ap-northeast-2.amazonaws.com/#/game/start"
+        src="https://d3e6bnfysfkinx.cloudfront.net/#/game/start"
         class="memory-iframe"
       />
     </div>

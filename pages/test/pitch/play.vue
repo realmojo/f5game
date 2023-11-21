@@ -1,13 +1,9 @@
 <template>
   <main class="site-layout pitch flex justify-center flex-col">
-    <Ready
-      v-if="isStart === false"
-      :text="isStartText === false ? 'Ready' : 'Start'"
+    <iframe
+      src="https://dfecbzhescd4x.cloudfront.net/play"
+      class="pitch-iframe"
     />
-
-    <div :class="isStart === false ? 'opacity-0' : 'opacity-100'">
-      <iframe src="https://pitch.f5game.co.kr/play" class="pitch-iframe" />
-    </div>
 
     <Share
       title="절대음감 테스트 - F5 Games"
@@ -16,18 +12,3 @@
     />
   </main>
 </template>
-
-<script setup>
-import "~/assets/css/ready.scss";
-const isStart = ref(false);
-const isStartText = ref(false);
-
-onMounted(() => {
-  setTimeout(() => {
-    isStart.value = true;
-  }, 3800);
-  setTimeout(() => {
-    isStartText.value = true;
-  }, 2000);
-});
-</script>
