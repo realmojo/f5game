@@ -24,7 +24,6 @@
     "@nuxt/image": "^1.0.0",
     "@nuxt/image-edge": "^1.0.0-28331292.0183ddc",
     "ant-design-vue": "^4.0.7",
-    "axios": "^1.6.1",
-    "vue-gtag-next": "^1.14.0"
+    "axios": "^1.6.1"
   }
 }

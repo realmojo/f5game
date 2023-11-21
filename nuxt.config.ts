@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/image-edge"],
-  plugins: ["@/plugins/antd", "@/plugins/gtag"],
+  plugins: ["@/plugins/antd"],
   app: {
     head: {
       htmlAttrs: { lang: "ko" },
@@ -28,6 +28,10 @@ export default defineNuxtConfig({
           async: true,
         },
         {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-J56G7PJBJT",
+          async: true,
+        },
+        {
           src: "//wcs.naver.net/wcslog.js",
           type: "text/javascript",
         },
@@ -39,6 +43,11 @@ export default defineNuxtConfig({
         {
           innerHTML:
             '(function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt"; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "ju0kl7d4d4");',
+          type: "text/javascript",
+        },
+        {
+          innerHTML:
+            "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-J56G7PJBJT');",
           type: "text/javascript",
         },
       ],
