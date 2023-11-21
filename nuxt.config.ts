@@ -4,11 +4,6 @@ const description =
 const logo =
   "https://f5game.s3.ap-northeast-2.amazonaws.com/f5game-test-logo.png";
 export default defineNuxtConfig({
-  // runtimeConfig: {
-  //   public: {
-  //     BASE_URL: "https://agent.f5game.co.kr/api",
-  //   },
-  // },
   css: ["~/assets/css/style.css", "~/assets/css/mobile.css"],
   postcss: {
     plugins: {
@@ -17,7 +12,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/image-edge"],
-  plugins: ["@/plugins/antd"],
+  plugins: ["@/plugins/antd", "@/plugins/gtag"],
   app: {
     head: {
       htmlAttrs: { lang: "ko" },
