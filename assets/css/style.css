@@ -62,10 +62,13 @@ main {
   width: 500px;
   margin: 0 auto;
 }
-.pitch-iframe,
 .match-iframe {
   width: 1000px;
   height: 900px;
+}
+.pitch-iframe {
+  width: 1000px;
+  height: 670px;
 }
 .sudoku-iframe {
   width: 1000px;
