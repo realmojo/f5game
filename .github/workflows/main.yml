@@ -26,8 +26,8 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Build
-        run: yarn build
+      - name: Generate
+        run: yarn generate
 
       - name: Deploy
         env:
