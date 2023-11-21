@@ -26,7 +26,7 @@
       </div>
       <Share
         title="성인 ADHD 테스트 자가진단 - F5 Games"
-        imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.png"
+        imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.webp"
         url="https://f5game.co.kr/test/adhd"
       />
     </div>
