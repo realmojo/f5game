@@ -17,7 +17,7 @@ header {
   width: 100%;
   z-index: 99;
   height: 64px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 header > .header-wrap {
   padding-left: 20px;
@@ -27,6 +27,9 @@ header > .header-wrap > a {
   color: #383837;
   font-size: 24px;
   font-weight: bold;
+}
+main {
+  margin-top: 10px !important;
 }
 .logo-image {
   width: 30px;
@@ -49,14 +52,16 @@ header > .header-wrap > a {
   width: 800px;
   margin: 0 auto;
 }
-.site-layout.pitch {
+.site-layout.pitch,
+.site-layout.match {
   width: 1000px;
 }
 .test-layout {
   width: 500px;
   margin: 0 auto;
 }
-.pitch-iframe {
+.pitch-iframe,
+.match-iframe {
   width: 1000px;
   height: 900px;
 }

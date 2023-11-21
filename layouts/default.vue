@@ -4,7 +4,6 @@
       <NuxtLink to="/">F5 Games</NuxtLink>
     </div>
   </header>
-
-  <slot></slot>
+  <slot />
   <Footer />
 </template>
