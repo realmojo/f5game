@@ -46,3 +46,75 @@
     </article>
   </main>
 </template>
+
+<script setup>
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `색상 사색자 테스트 - F5 games`;
+const description =
+  "색맹테스트, 색약테스트, 색맹검사는 두 가지의 색상을 두고 색상이 다른 하나를 찾는 테스트 입니다. 어떠한 지식도 필요로 하지 않으며 어린아이들 부터 어르신분들도 쉽게 테스트를 할 수 있습니다. 색맹테스트는 뇌 활동 증진 및 치매 예방 효과가 있는 퍼즐 게임입니다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/color.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
+</script>

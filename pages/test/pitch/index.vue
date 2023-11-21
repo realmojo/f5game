@@ -44,3 +44,75 @@
     </article>
   </main>
 </template>
+
+<script setup>
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `절대음감 테스트 - F5 games`;
+const description =
+  "절대음감 테스트 입니다. 피아노, 기타 소리의 청각 소리를 맞춰보세요. 여러분들도 한번 도전해보세요!";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/pitch.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
+</script>

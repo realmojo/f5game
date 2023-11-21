@@ -17,6 +17,12 @@ export const categories = [
   },
 ];
 
+export const categoriesKr = {
+  test: "테스트",
+  puzzle: "퍼즐",
+  util: "유틸",
+};
+
 export const f5gameList = [
   {
     image: "https://f5game.s3.ap-northeast-2.amazonaws.com/match.webp",

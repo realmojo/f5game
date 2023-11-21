@@ -65,4 +65,74 @@
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `정신연령 색상 테스트 - F5 games`;
+const description =
+  "사람들은 저마다 자신만의 정신연령 테스트를 가지고 있다. 성인이지만 어린아이 같은 행동을 하는 어른도 있고 반대로 아이지만 성숙한 모습을 보이는 어린이도 있다. 나는 어렸을 때 내가 굉장히 조숙하다고 생각했었다. 하지만 자라면서 점점 더 어려지는 나를 발견할 수 있었다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/color-age.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
+</script>

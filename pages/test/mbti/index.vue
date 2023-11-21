@@ -148,4 +148,74 @@ onMounted(() => {
     localStorage.setItem("f5game-my-mbti", "ESTJ");
   }, 100);
 });
+
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `MBTI 이상형 궁합 테스트 - F5 games`;
+const description =
+  "MBTI 검사는 자신의 성격유형을 파악하여 대인관계 및 의사소통 능력 향상에 도움을 주는 심리검사입니다. MBTI 검사는 개인의 선호경향성을 바탕으로 16가지 성격유형 중 하나로 분류하며, 각 유형별 특징을 이해함으로써 타인과의 상호작용시 발생하는 갈등이나 스트레스를 효과적으로 관리할 수 있도록 도와줍니다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/mbti.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
 </script>

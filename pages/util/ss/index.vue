@@ -110,7 +110,6 @@
       </a-col>
     </a-row>
   </main>
-  <!-- <contextHolder /> -->
 </template>
 
 <script setup>
@@ -161,4 +160,74 @@ const openNotification = (placement) => {
     duration: 10,
   });
 };
+
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `유튜브 동영상 다운로드 - F5 games`;
+const description =
+  "유튜브를 무료로 다운로드 할 수 있는 사이트 입니다. 또한 동영상 뿐만 아니라 유튜브 자막까지 함께 추출이 가능합니다. 그 외 인스타그램, 틱톡, 트위터 동영상들도 무료로 다운로드가 가능합니다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/ss.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
 </script>

@@ -59,4 +59,74 @@
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `영적동물 테스트 - F5 games`;
+const description =
+  "영적동물 테스트란 인간보다 상위 존재 혹은 초자연적인 힘과의 연결성을 가지는 테스트 입니다. 현대 사회에서는 이러한 사람들은 특정 종교나 단체 소속이라는 인식이 강하지만 고대 그리스 시대만 해도 그렇지 않았습니다. 예를 들어 플라톤 철학자 같은 경우도 자신 스스로 매우 영적이고 초월적인 무언가와의 연결성이 있다고 주장했고 실제로 그랬다고 합니다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/animal.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
+</script>

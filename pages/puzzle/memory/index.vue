@@ -52,3 +52,75 @@
     </article>
   </main>
 </template>
+
+<script setup>
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `순간기억력 퍼즐게임 - F5 games`;
+const description =
+  "순간기억력은 뇌 활동 증진 및 치매 예방 효과가 있는 퍼즐 게임입니다. 매일 한 조각씩 도전하여 목표 달성 시 더 어려운 단계에 도전할 수 있습니다. 아이들은 물론 어르신들도 쉽게 즐길 수 있어 가족 모두 즐기기 좋습니다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/memory.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
+</script>

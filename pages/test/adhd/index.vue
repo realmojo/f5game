@@ -59,4 +59,74 @@
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `성인 ADHD 테스트 자가진단 - F5 games`;
+const description =
+  "ADHD는 주의력결핍 과잉행동장애(ADHD)라는 질환입니다. 국내에서는 아직까지 잘 알려지지 않은 질병이기 때문입니다. 많은 환자분들이 단순히 산만하다고 여겨 치료시기를 놓치는 경우가 많습니다. 실제로 우리나라 전체 인구의 5%정도가 앓고 있다고 합니다. 현재 의학계에서도 주목하고 있는 질환이기도 하죠. 당신이 만약 집중력이 부족하고 충동조절이 힘들다면 꼭 한번 읽어보시기 바랍니다. 혹시 나도 모르는 사이에 증상을 키우고 있지는 않은지 점검해보는 시간이 될 것입니다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/adhd.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
+</script>

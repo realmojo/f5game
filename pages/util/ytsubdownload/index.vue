@@ -143,11 +143,6 @@ const doSearch = async () => {
     `https://f5game-bot.herokuapp.com/youtube/scripts?url=${url}`
   );
   isLoading.value = false;
-  console.log(data);
-  // item.value = data;
-  // options2.value = data.urls;
-  // urlItem.value = data.urls[0];
-  // value2.value = data.urls[0].value;
 };
 
 const optionChange = (item, e) => {
@@ -162,4 +157,74 @@ const openNotification = (placement) => {
     duration: 10,
   });
 };
+
+const route = useRoute();
+const metaUrl = `https://f5game.co.kr/${route.path}`;
+const title = `유튜브 자막 다운로드 - F5 games`;
+const description =
+  "ytsubdownload은 무료로 운영되고 있는 유튜브 자막 스크립트 추출 다운로드를 할 수 있는 사이트 입니다. 이러한 정보들은 모두 자막이 존재하는데 이를 통해 시청자들은 더욱더 풍부한 이해력을 바탕으로 영상을 감상할 수 있게 된다.";
+const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/ytsubdown.webp";
+useHead({
+  title: title,
+  link: [
+    {
+      rel: "canonical",
+      href: metaUrl,
+    },
+  ],
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      name: "og:type",
+      content: "website",
+    },
+    {
+      name: "og:url",
+      content: metaUrl,
+    },
+    {
+      name: "og:article:author",
+      content: "F5game",
+    },
+    {
+      name: "og:site_name",
+      content: "F5game",
+    },
+    {
+      name: "og:title",
+      content: title,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:site",
+      content: "@f5game.co.kr",
+    },
+    {
+      name: "twitter:title",
+      content: title,
+    },
+    {
+      name: "twitter:description",
+      content: description,
+    },
+    {
+      name: "twitter:image",
+      content: logo,
+    },
+    {
+      name: "apple-touch-icon",
+      content: logo,
+    },
+  ],
+});
 </script>
