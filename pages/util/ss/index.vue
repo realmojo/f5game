@@ -162,7 +162,7 @@ const openNotification = (placement) => {
 };
 
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `유튜브 동영상 다운로드 - F5 games`;
 const description =
   "유튜브를 무료로 다운로드 할 수 있는 사이트 입니다. 또한 동영상 뿐만 아니라 유튜브 자막까지 함께 추출이 가능합니다. 그 외 인스타그램, 틱톡, 트위터 동영상들도 무료로 다운로드가 가능합니다.";

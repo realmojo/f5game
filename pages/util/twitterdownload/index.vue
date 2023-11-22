@@ -158,7 +158,7 @@ const openNotification = (placement) => {
 };
 
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `트위터 영상 저장 - F5 games`;
 const description =
   "트위터 영상 저장을 무료 다운로드 하는 사이트 입니다. 전용 앱 없이 저장하면 누구나 쉽게 사용할 수 있습니다. iPhone, Android 및 PC에서 사용할 수 있으므로 자유롭게 사용하십시오.";

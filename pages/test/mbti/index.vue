@@ -150,7 +150,7 @@ onMounted(() => {
 });
 
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `MBTI 이상형 궁합 테스트 - F5 games`;
 const description =
   "MBTI 검사는 자신의 성격유형을 파악하여 대인관계 및 의사소통 능력 향상에 도움을 주는 심리검사입니다. MBTI 검사는 개인의 선호경향성을 바탕으로 16가지 성격유형 중 하나로 분류하며, 각 유형별 특징을 이해함으로써 타인과의 상호작용시 발생하는 갈등이나 스트레스를 효과적으로 관리할 수 있도록 도와줍니다.";

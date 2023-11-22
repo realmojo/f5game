@@ -61,7 +61,7 @@
 
 <script setup>
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `영적동물 테스트 - F5 games`;
 const description =
   "영적동물 테스트란 인간보다 상위 존재 혹은 초자연적인 힘과의 연결성을 가지는 테스트 입니다. 현대 사회에서는 이러한 사람들은 특정 종교나 단체 소속이라는 인식이 강하지만 고대 그리스 시대만 해도 그렇지 않았습니다. 예를 들어 플라톤 철학자 같은 경우도 자신 스스로 매우 영적이고 초월적인 무언가와의 연결성이 있다고 주장했고 실제로 그랬다고 합니다.";

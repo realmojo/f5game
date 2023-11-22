@@ -67,7 +67,7 @@
 
 <script setup>
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `정신연령 색상 테스트 - F5 games`;
 const description =
   "사람들은 저마다 자신만의 정신연령 테스트를 가지고 있다. 성인이지만 어린아이 같은 행동을 하는 어른도 있고 반대로 아이지만 성숙한 모습을 보이는 어린이도 있다. 나는 어렸을 때 내가 굉장히 조숙하다고 생각했었다. 하지만 자라면서 점점 더 어려지는 나를 발견할 수 있었다.";

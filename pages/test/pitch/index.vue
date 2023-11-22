@@ -47,7 +47,7 @@
 
 <script setup>
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `절대음감 테스트 - F5 games`;
 const description =
   "절대음감 테스트 입니다. 피아노, 기타 소리의 청각 소리를 맞춰보세요. 여러분들도 한번 도전해보세요!";

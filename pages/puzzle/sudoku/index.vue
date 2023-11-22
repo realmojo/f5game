@@ -63,7 +63,7 @@
 const types = ["easy", "normal", "hard", "crazy"];
 
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `스도쿠 퍼즐게임 - F5 games`;
 const description =
   "스도쿠는 가로 세로 9칸씩 총 81칸으로 이루어진 정사각형의 빈칸에 1부터 9까지의 숫자를 채워 넣는 퍼즐 게임입니다. 스도쿠는 수학자 레온하르트 오일러가 고안한 것으로 ‘한붓그리기’라는 뜻을 가지고 있습니다. 숫자가 겹치지 않아야 한다는 기본 규칙만 지키면 쉽게 풀 수 있는 두뇌게임이기 때문에 온 가족이 함께 즐기기 좋은 놀이입니다.";

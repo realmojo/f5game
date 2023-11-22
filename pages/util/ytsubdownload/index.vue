@@ -159,7 +159,7 @@ const openNotification = (placement) => {
 };
 
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `유튜브 자막 다운로드 - F5 games`;
 const description =
   "ytsubdownload은 무료로 운영되고 있는 유튜브 자막 스크립트 추출 다운로드를 할 수 있는 사이트 입니다. 이러한 정보들은 모두 자막이 존재하는데 이를 통해 시청자들은 더욱더 풍부한 이해력을 바탕으로 영상을 감상할 수 있게 된다.";

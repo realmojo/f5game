@@ -36,7 +36,7 @@
 
 <script setup>
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `같은그림찾기 퍼즐게임 - F5 games`;
 const description =
   "F5game.co.kr 은 최신 최고의 무료 온라인 게임을 제공합니다. 같은그림을 제한시간 이내에 빠르게 찾아보세요.";

@@ -55,7 +55,7 @@
 
 <script setup>
 const route = useRoute();
-const metaUrl = `https://f5game.co.kr/${route.path}`;
+const metaUrl = `https://f5game.co.kr${route.path}`;
 const title = `순간기억력 퍼즐게임 - F5 games`;
 const description =
   "순간기억력은 뇌 활동 증진 및 치매 예방 효과가 있는 퍼즐 게임입니다. 매일 한 조각씩 도전하여 목표 달성 시 더 어려운 단계에 도전할 수 있습니다. 아이들은 물론 어르신들도 쉽게 즐길 수 있어 가족 모두 즐기기 좋습니다.";
