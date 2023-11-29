@@ -59,6 +59,10 @@ export default defineNuxtConfig({
       ],
       meta: [
         {
+          name: "msvalidate.01",
+          content: "9D6C85394BA833AF09FFDD20770E7D56",
+        },
+        {
           name: "robots",
           content: "index, follow",
         },
