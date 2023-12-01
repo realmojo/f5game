@@ -25,7 +25,7 @@
       type="primary"
       size="large"
     >
-      DOWNLOAD
+      SEARCH
     </a-button>
 
     <div class="youtube-card" v-if="item.title">
@@ -42,23 +42,16 @@
             :options="options2"
             @change="optionChange"
           ></a-select>
+          <a href="/util/ss/download">
+            <a-button
+              class="bg-blue-500 mt-4 text-center w-full"
+              type="primary"
+              size="large"
+            >
+              DOWNLOAD
+            </a-button>
+          </a>
         </div>
-        <a
-          class="link link-download subname ga_track_events download-icon"
-          :href="urlItem.value"
-          :data-quality="urlItem.quality"
-          :data-type="urlItem.type"
-          :download="urlItem.title"
-          target="_self"
-        >
-          <a-button
-            class="bg-blue-500 mt-4 text-center"
-            type="primary"
-            size="large"
-          >
-            DOWNLOAD
-          </a-button>
-        </a>
       </a-card>
     </div>
 
@@ -146,10 +139,14 @@ const doSearch = async () => {
   options2.value = data.urls;
   urlItem.value = data.urls[0];
   value2.value = data.urls[0].value;
+
+  localStorage.setItem("f5game-ss-item", JSON.stringify(item.value));
+  localStorage.setItem("f5game-ss-urlItem", JSON.stringify(urlItem.value));
 };
 
 const optionChange = (item, e) => {
   urlItem.value = e;
+  localStorage.setItem("f5game-ss-urlItem", JSON.stringify(urlItem.value));
 };
 
 const openNotification = (placement) => {
