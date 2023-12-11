@@ -143,3 +143,16 @@ footer {
   color: #c5c2c2;
   font-size: 12px;
 }
+
+.line-title {
+  border-bottom: 1px solid #b3b7bd;
+  margin-top: 10px;
+}
+.line-title > p {
+  padding: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.btn-radio-word {
+  padding: 0 8px;
+}
