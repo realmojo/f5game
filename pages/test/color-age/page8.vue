@@ -2,7 +2,7 @@
   <main class="test-layout flex justify-center flex-col">
     <div class="pt-8">
       <div class="text-left pl-4">8. 어느색이 가장 밝은가요?</div>
-      <nuxt-img
+      <img
         src="https://tistory.s3.ap-northeast-2.amazonaws.com/question8.png"
         class="pt-2 w-full"
         alt="qna1"

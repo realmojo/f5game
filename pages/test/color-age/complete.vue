@@ -21,7 +21,7 @@
 
         <div class="text-center pt-4 text-4xl">{{ age }}</div>
         <div class="text-left px-4 pt-4 pb-4 adhd-result-text">{{ text }}</div>
-        <nuxt-img alt="color-age-result" :src="imageUrl" loading="lazy" />
+        <img alt="color-age-result" :src="imageUrl" />
         <Adsense slotId="4567187006" />
       </div>
       <Share

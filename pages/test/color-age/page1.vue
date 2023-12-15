@@ -5,7 +5,7 @@
     </div>
     <div class="pt-8">
       <div class="text-left pl-4">1. 어느색이 가장 눈에 보이나요?</div>
-      <nuxt-img
+      <img
         src="https://tistory.s3.ap-northeast-2.amazonaws.com/question1.png"
         class="pt-2 w-full"
         alt="qna1"

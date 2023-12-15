@@ -31,7 +31,7 @@
     <div class="youtube-card" v-if="item.title">
       <a-card>
         <div class="ant-card-cover">
-          <nuxt-img :alt="item.title" :src="item.thumbnail" loading="lazy" />
+          <img :alt="item.title" :src="item.thumbnail" />
         </div>
         <a-card-meta :title="item.title" />
 

@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@ant-design/icons-vue": "^7.0.1",
+    "@nuxt/image": "^1.1.0",
     "@nuxt/devtools": "latest",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.8.1",
@@ -21,8 +22,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/image": "^1.0.0",
-    "@nuxt/image-edge": "^1.0.0-28331292.0183ddc",
     "ant-design-vue": "^4.0.7",
     "axios": "^1.6.1"
   }

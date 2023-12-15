@@ -8,7 +8,7 @@
       <a-card size="small">
         <NuxtLink :to="`/${item.category}/${item.link}`">
           <div class="ant-card-cover">
-            <nuxt-img :alt="item.link" :src="item.image" loading="lazy" />
+            <img :alt="item.link" :src="item.image" />
           </div>
           <div class="ant-card-meta">
             <div class="ant-card-meta-detail">

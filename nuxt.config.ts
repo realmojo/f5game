@@ -10,7 +10,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/image-edge"],
   plugins: ["@/plugins/antd"],
   app: {
     head: {
