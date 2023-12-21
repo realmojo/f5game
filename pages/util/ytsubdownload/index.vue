@@ -27,39 +27,34 @@
     >
       DOWNLOAD
     </a-button>
-
-    <div class="youtube-card" v-if="item.title">
-      <a-card>
-        <div class="ant-card-cover">
-          <img :alt="item.title" :src="item.thumbnail" />
-        </div>
-        <a-card-meta :title="item.title" />
-
-        <div class="pt-4">
-          <a-select
-            v-model:value="value2"
-            style="width: 100%"
-            :options="options2"
-            @change="optionChange"
-          ></a-select>
-        </div>
-        <a
-          class="link link-download subname ga_track_events download-icon"
-          :href="urlItem.value"
-          :data-quality="urlItem.quality"
-          :data-type="urlItem.type"
-          :download="urlItem.title"
-          target="_self"
-        >
-          <a-button
-            class="bg-blue-500 mt-4 text-center"
-            type="primary"
-            size="large"
-          >
-            DOWNLOAD
-          </a-button>
-        </a>
-      </a-card>
+    <div class="youtube-card">
+      <div v-if="item.title" style="width: 336; margin: 20px auto">
+        <a-card hoverable>
+          <div class="ant-card-cover">
+            <img :alt="item.title" :src="item.thumbnail" />
+          </div>
+          <div class="text-center">
+            <a-radio-group
+              v-model:value="radioValue"
+              class="mt-4"
+              @change="onRadioChange"
+            >
+              <a-radio :value="1">시간포함</a-radio>
+              <a-radio :value="2">시간제외</a-radio>
+            </a-radio-group>
+            <a href="/util/ytsubdownload/download" target="_self">
+              <a-button
+                class="btn-start mt-4 text-center"
+                type="primary"
+                size="large"
+                style="width: 100%"
+              >
+                TXT 자막 다운로드
+              </a-button>
+            </a>
+          </div>
+        </a-card>
+      </div>
     </div>
 
     <a-row class="mt-8 px-2">
@@ -128,6 +123,7 @@ const item = ref({});
 const urlItem = ref({});
 const value2 = ref("");
 const options2 = ref([]);
+const radioValue = ref(1);
 const doSearch = async () => {
   const url = youtubeUrl.value;
 
@@ -143,6 +139,12 @@ const doSearch = async () => {
     `https://f5game-bot.herokuapp.com/youtube/scripts?url=${url}`
   );
   isLoading.value = false;
+  localStorage.setItem("f5game-youtube-script", JSON.stringify(data));
+  item.value = data;
+};
+
+const onRadioChange = ({ target }) => {
+  localStorage.setItem("f5game-youtube-radio", target.value);
 };
 
 const optionChange = (item, e) => {
