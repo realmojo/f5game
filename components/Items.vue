@@ -5,7 +5,7 @@
       :key="item.title"
       class="max-[640px]:col-span-2 sm:col-span-1"
     >
-      <a-card size="small">
+      <a-card hoverable size="small">
         <NuxtLink :to="`/${item.category}/${item.link}`">
           <div class="ant-card-cover">
             <img :alt="item.link" :src="item.image" />

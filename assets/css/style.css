@@ -21,7 +21,7 @@ header {
 }
 header > .header-wrap {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 14px;
 }
 header > .header-wrap > a {
   color: #383837;
@@ -43,7 +43,7 @@ main {
   margin: 0 auto;
 }
 .ant-layout {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .ant-card .ant-card-body {
   padding: 0;
