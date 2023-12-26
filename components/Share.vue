@@ -30,7 +30,7 @@
     <div class="kakao-share-button inline" style="cursor: pointer">
       <button id="kakao-link-btn">
         <img
-          src="https://tistory.s3.ap-northeast-2.amazonaws.com/kakao.png"
+          src="https://f5game.s3.ap-northeast-2.amazonaws.com/kakao.png"
           alt="kakao-share-icon"
           style="width: 90px"
         />

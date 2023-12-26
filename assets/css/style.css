@@ -156,3 +156,18 @@ footer {
 .btn-radio-word {
   padding: 0 8px;
 }
+
+.speed-layout {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0 !important;
+  color: #e6e6e6;
+  font-size: 34px;
+}
+.speed-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* background-color: rgb(226, 61, 61); */
+  margin: 0 auto;
+}

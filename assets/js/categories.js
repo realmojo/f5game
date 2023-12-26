@@ -48,6 +48,22 @@ export const f5gameList = [
     description:
       "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
   },
+  // {
+  //   image: "https://f5game.s3.ap-northeast-2.amazonaws.com/memory.webp",
+  //   link: "1to50",
+  //   category: "puzzle",
+  //   title: "1to50",
+  //   description:
+  //     "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
+  // },
+  {
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/reactspeed.webp",
+    link: "speed",
+    category: "test",
+    title: "반응속도 테스트",
+    description:
+      "반응 속도 테스트는 사람이 외부 자극에 반응하는 빠른 능력을 측정하는 테스트입니다. 일반적으로 컴퓨터나 모바일 앱을 통해 진행되며, 화면에 나타나는 신호에 대한 반응 속도를 측정합니다. 주로 색이나 모양이 변하거나 신호가 나타나면 사용자는 최대한 빨리 해당 신호에 반응하여 클릭하거나 터치합니다. 이를 통해 신호가 나타난 순간부터 사용자가 반응하여 신호를 처리하는 데 걸리는 시간을 측정하여 반응 속도를 알 수 있습니다. 이 테스트는 주로 인지 능력, 뇌의 신속한 처리 속도, 집중력 등을 평가하는 데 사용됩니다.",
+  },
   {
     image: "https://f5game.s3.ap-northeast-2.amazonaws.com/color.webp",
     link: "color",
