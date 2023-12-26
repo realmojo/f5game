@@ -3,11 +3,11 @@
     class="speed-layout flex justify-center text-center flex-col bg-gray-800"
   >
     <div v-if="!isCalc" class="mb-10">결과를 계산 중입니다..</div>
-
     <div v-else>
       당신의 평균 반응속도는 <span class="text-green-400">{{ speed }} ms</span>
       입니다.
 
+      <Adsense slotId="7421797623" />
       <div class="mb-4">
         <NuxtLink to="/test/speed/play">
           <a-button size="large">다시하기</a-button>

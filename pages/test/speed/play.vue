@@ -3,10 +3,8 @@
     class="speed-layout flex justify-center text-center flex-col bg-gray-800"
   >
     <div class="mb-10">
-      초록색이 나오면 터치하세요 ({{ result.length }}/5)
-      <div v-if="result.length === 5" class="pt-2 text-2xl">
-        결과를 기다리는 중입니다...
-      </div>
+      <div v-if="result.length === 5">결과를 기다리는 중입니다...</div>
+      <div v-else>초록색이 나오면 터치하세요 ({{ result.length }}/5)</div>
     </div>
 
     <div
