@@ -13,6 +13,10 @@ import {
   Popover,
   Tag,
   Select,
+  Carousel,
+  RadioButton,
+  Progress,
+  Space,
 } from "ant-design-vue";
 
 export default defineNuxtPlugin((nuxtApp) => {
@@ -27,5 +31,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     .use(Col)
     .use(Popover)
     .use(Tag)
-    .use(Select);
+    .use(Select)
+    .use(Carousel)
+    .use(Progress)
+    .use(Space);
 });

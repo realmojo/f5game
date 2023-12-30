@@ -57,6 +57,14 @@ export const f5gameList = [
   //     "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
   // },
   {
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/depression.webp",
+    link: "depression",
+    category: "test",
+    title: "우울증 테스트 자가진단 검사",
+    description:
+      "우울증 테스트는 우울증의 증상과 정도를 평가하는데 사용됩니다. 주로 자기평가 또는 의사에게 의뢰하여 진행됩니다. 대표적인 테스트로는 Beck 우울증 척도, Hamilton 우울증 평가척도, PHQ-9 등이 있습니다. 이러한 테스트들은 우울증 증상의 정도, 빈도 및 일상 생활에 미치는 영향을 평가하여 우울증의 심각성을 확인하고, 적절한 치료 방안을 결정하는 데 도움을 줍니다.",
+  },
+  {
     image: "https://f5game.s3.ap-northeast-2.amazonaws.com/reactspeed.webp",
     link: "speed",
     category: "test",
