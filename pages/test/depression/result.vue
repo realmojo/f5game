@@ -11,7 +11,7 @@
     </div>
     <Share
       title="우울증 테스트 자가진단 검사 - F5 Games"
-      imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/deression.webp"
+      imageUrl="https://f5game.s3.ap-northeast-2.amazonaws.com/depression.webp"
       url="https://f5game.co.kr/test/depression"
     />
   </main>
