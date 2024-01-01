@@ -7,7 +7,7 @@
     </p>
     <Adsense slotId="9319130475" />
     <div class="w-full px-2">
-      <NuxtLink to="/test/adhd/page1">
+      <NuxtLink to="/test/adhd/play">
         <a-button
           class="bg-blue-500 mt-4 text-center w-full"
           type="primary"
