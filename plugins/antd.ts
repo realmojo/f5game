@@ -10,6 +10,7 @@ import {
   Spin,
   Row,
   Col,
+  Input,
   Popover,
   Tag,
   Select,
@@ -23,6 +24,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp
     .use(Button)
     .use(Card)
+    .use(Input)
     .use(Layout)
     .use(List)
     .use(Radio)
