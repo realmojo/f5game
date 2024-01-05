@@ -2,7 +2,7 @@
   <div v-if="env === 'development'" class="adsense-dev text-white">
     애드센스 {{ slotId }}
   </div>
-  <div v-else>
+  <div v-else class="adsense-prod">
     <ins
       class="adsbygoogle"
       style="display: block"

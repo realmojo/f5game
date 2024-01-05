@@ -84,6 +84,10 @@ main {
   background-color: #2d3436;
   margin: 0 auto;
 }
+.adsense-prod {
+  min-height: 360px;
+  max-height: 500px;
+}
 
 .adhd-result-text {
   line-height: 24px;
