@@ -24,30 +24,6 @@ export const categoriesKr = {
 };
 
 export const f5gameList = [
-  {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/match.webp",
-    link: "match",
-    category: "puzzle",
-    title: "같은그림찾기 - 치매예방 두뇌운동",
-    description:
-      "같은그림을 제한시간 이내에 빠르게 찾아보세요. 같은그림을 3초간 보여준 후 빠르게 찾아내는 두뇌운동 게임입니다.",
-  },
-  {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/sudoku.webp",
-    link: "sudoku",
-    category: "puzzle",
-    title: "스도쿠",
-    description:
-      "스도쿠 퍼즐의 목표는 9×9 격자를 숫자로 채워, 각 행과 열과 3×3구역이 1에서 9까지의 숫자 모두를 포함하도록 하는 것입니다.",
-  },
-  {
-    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/memory.webp",
-    link: "memory",
-    category: "puzzle",
-    title: "순간기억력",
-    description:
-      "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
-  },
   // {
   //   image: "https://f5game.s3.ap-northeast-2.amazonaws.com/memory.webp",
   //   link: "1to50",
@@ -56,6 +32,15 @@ export const f5gameList = [
   //   description:
   //     "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
   // },
+  {
+    image:
+      "https://f5game.s3.ap-northeast-2.amazonaws.com/borderline-personality.webp",
+    link: "borderline-personality",
+    category: "test",
+    title: "경계성 인격장애 테스트 자가진단",
+    description:
+      "경계성 인격장애(Borderline Personality Disorder, BPD)는 정체성에 대한 불안, 강한 감정 변동, 대인관계의 불안정성 등이 특징인 정신건강 이상으로, 이를 평가하기 위한 테스트는 전문가의 진단과 함께 신중한 고려가 필요합니다. 그러나 여기에는 경계성 인격장애에 대한 이해를 돕기 위한 예시로 사용될 수 있는 30개의 문항이 있습니다. 이러한 문항은 자가평가를 통해 자신의 경향성을 파악하는 데 도움이 될 수 있습니다.",
+  },
   {
     image: "https://f5game.s3.ap-northeast-2.amazonaws.com/depression.webp",
     link: "depression",
@@ -151,5 +136,29 @@ export const f5gameList = [
     title: "한 문장 테스트",
     description:
       "한 문장으로 다양한 테스트 케이스를 만들고 친구들과 공유해보세요.",
+  },
+  {
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/match.webp",
+    link: "match",
+    category: "puzzle",
+    title: "같은그림찾기 - 치매예방 두뇌운동",
+    description:
+      "같은그림을 제한시간 이내에 빠르게 찾아보세요. 같은그림을 3초간 보여준 후 빠르게 찾아내는 두뇌운동 게임입니다.",
+  },
+  {
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/sudoku.webp",
+    link: "sudoku",
+    category: "puzzle",
+    title: "스도쿠",
+    description:
+      "스도쿠 퍼즐의 목표는 9×9 격자를 숫자로 채워, 각 행과 열과 3×3구역이 1에서 9까지의 숫자 모두를 포함하도록 하는 것입니다.",
+  },
+  {
+    image: "https://f5game.s3.ap-northeast-2.amazonaws.com/memory.webp",
+    link: "memory",
+    category: "puzzle",
+    title: "순간기억력",
+    description:
+      "여러개의 반짝이는 순간 기억력을 테스트 해보세요. 당신의 기억력은 얼마나 좋으신가요? 순간의 기억력이 당신의 지능입니다.",
   },
 ];
