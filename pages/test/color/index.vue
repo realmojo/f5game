@@ -15,6 +15,10 @@
     </div>
     <article>
       <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
+      <div class="post">
         <h2>색맹 테스트를 즐겨보세요.</h2>
         <p>
           세상에는 수많은 색맹이 존재한다. 그러나 우리는 단순히 색약이라는

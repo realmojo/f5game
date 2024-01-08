@@ -96,6 +96,9 @@ main {
 article > .post > h2 {
   font-size: 32px;
 }
+.post > h2 {
+  font-size: 32px;
+}
 .post {
   margin-top: 20px;
 }

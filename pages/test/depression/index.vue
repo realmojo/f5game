@@ -19,6 +19,10 @@
     </div>
     <article class="mt-4">
       <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
+      <div class="post">
         <h2>우울증이란</h2>
         <p>
           우울증은 정신 건강 장애 중 하나로, 지속적인 우울감과 희망 없는 감정,

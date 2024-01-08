@@ -15,6 +15,10 @@
     </div>
     <article>
       <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
+      <div class="post">
         <h2>절대음감 테스트란</h2>
         <p>
           절대음감(Perfect Pitch)은 음악적 음계나 음의 높낮이를 듣고 바로 그

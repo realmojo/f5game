@@ -15,6 +15,10 @@
     </div>
     <article class="mt-4">
       <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
+      <div class="post">
         <h2>반응속도 테스트란</h2>
         <p>
           반응 속도 테스트는 사람이 외부 자극에 반응하는 빠른 능력을 측정하는

@@ -55,6 +55,10 @@
           "영적동물"이란 무엇일까?
         </p>
       </div>
+      <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
     </article>
   </main>
 </template>

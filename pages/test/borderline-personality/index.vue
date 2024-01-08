@@ -29,17 +29,7 @@
       </div>
       <div class="post">
         <h2>관련검사</h2>
-        <ul>
-          <li><NuxtLink to="/test/adhd">성인 ADHD 테스트</NuxtLink></li>
-          <li>
-            <a href="https://mindpang.com/health/left-right-brain-test"
-              >좌뇌 우뇌 테스트</a
-            >
-          </li>
-          <li><NuxtLink to="/test/depression">우울증 테스트</NuxtLink></li>
-          <li><NuxtLink to="/test/color-age">정신연령 테스트</NuxtLink></li>
-          <li><NuxtLink to="/test/color">색맹 테스트</NuxtLink></li>
-        </ul>
+        <Testshare />
       </div>
     </article>
   </main>

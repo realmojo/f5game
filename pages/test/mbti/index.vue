@@ -26,6 +26,10 @@
     </div>
     <article class="mt-4">
       <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
+      <div class="post">
         <h2>MBTI 란</h2>
         <p>
           MBTI는 Myers-Briggs Type Indicator의 약자로, 성격 유형을 분류하는

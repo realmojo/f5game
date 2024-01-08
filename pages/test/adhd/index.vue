@@ -44,16 +44,7 @@
       </div>
       <div class="post">
         <h2>관련검사</h2>
-        <ul>
-          <li>성인 주의력결핍 과잉행동장애 자가보고척도(ASRS)</li>
-          <li>성인 주의력결핍 과잉행동장애 평가척도(AARS)</li>
-          <li>코너스 성인 주의력결핍 과잉행동장애 평정척도(CAARS)</li>
-          <li>성인 ADHD 진단을 위한 면담(DIVA)</li>
-          <li>
-            이렇게 얻은 다양한 정보를 종합하여 최종적으로 성인 ADHD 진단을
-            내리게 된다.
-          </li>
-        </ul>
+        <Testshare />
       </div>
     </article>
   </main>

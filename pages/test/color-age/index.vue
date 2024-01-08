@@ -16,6 +16,10 @@
     </div>
     <article>
       <div class="post">
+        <h2>관련검사</h2>
+        <Testshare />
+      </div>
+      <div class="post">
         <h2>정신연령 테스트란</h2>
         <p>
           사람들은 저마다 자신만의 정신연령 테스트를 가지고 있다. 성인이지만
