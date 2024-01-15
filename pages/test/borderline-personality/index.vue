@@ -1,8 +1,6 @@
 <template>
   <main class="test-layout flex justify-center flex-col">
-    <h1 class="text-3xl text-center">
-      경계성 인격장애(성격장애) 테스트 자가진단
-    </h1>
+    <h1 class="text-3xl text-center">경계성 인격장애 테스트 자가진단</h1>
     <Adsense slotId="1265562744" />
     <div class="w-full px-2">
       <NuxtLink to="/test/borderline-personality/play">
@@ -38,7 +36,7 @@
 <script setup>
 const route = useRoute();
 const metaUrl = `https://f5game.co.kr${route.path}`;
-const title = `경계성 인격장애(성격장애) 테스트 자가진단 - F5 games`;
+const title = `경계성 인격장애 테스트 자가진단 - F5 games`;
 const description =
   "경계성 인격장애(Borderline Personality Disorder, BPD)는 정체성에 대한 불안, 강한 감정 변동, 대인관계의 불안정성 등이 특징인 정신건강 이상으로, 이를 평가하기 위한 테스트는 전문가의 진단과 함께 신중한 고려가 필요합니다. 그러나 여기에는 경계성 인격장애에 대한 이해를 돕기 위한 예시로 사용될 수 있는 30개의 문항이 있습니다. 이러한 문항은 자가평가를 통해 자신의 경향성을 파악하는 데 도움이 될 수 있습니다.";
 const logo =
