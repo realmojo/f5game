@@ -1,6 +1,6 @@
 <template>
   <main class="test-layout flex justify-center flex-col">
-    <h1 class="text-3xl text-center">색맹 사색자 테스트</h1>
+    <h1 class="text-3xl text-center">색맹 테스트</h1>
     <Adsense slotId="5363843090" />
     <div class="w-full px-2">
       <NuxtLink to="/test/color/play">
@@ -54,7 +54,7 @@
 <script setup>
 const route = useRoute();
 const metaUrl = `https://f5game.co.kr${route.path}`;
-const title = `색맹 색상 사색자 테스트 - F5 games`;
+const title = `색맹 테스트 - F5 games`;
 const description =
   "색맹테스트, 색약테스트, 색맹검사는 두 가지의 색상을 두고 색상이 다른 하나를 찾는 테스트 입니다. 어떠한 지식도 필요로 하지 않으며 어린아이들 부터 어르신분들도 쉽게 테스트를 할 수 있습니다. 색맹테스트는 뇌 활동 증진 및 치매 예방 효과가 있는 퍼즐 게임입니다.";
 const logo = "https://f5game.s3.ap-northeast-2.amazonaws.com/color.webp";
