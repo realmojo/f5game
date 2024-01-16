@@ -10,7 +10,7 @@
         class="test-item mb-4"
         :key="index"
       >
-        <h1 class="text-xl pt-4">{{ index + 1 }}. {{ item.question }}</h1>
+        <h2 class="text-xl pt-4">{{ index + 1 }}. {{ item.question }}</h2>
         <a-radio-group
           class="mt-2 w-full"
           v-model:value="testAnswer[index]"
